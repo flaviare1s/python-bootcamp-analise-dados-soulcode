@@ -27,3 +27,11 @@ def soma(n1, n2):
   return n1 + n2
 
 print(soma(1, 4))
+
+def eh_primo(n):
+  for i in range(2, n):
+    if n % i == 0:
+      return False
+  return True
+
+print(eh_primo(2))

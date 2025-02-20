@@ -18,15 +18,18 @@ while True:
 # Outra maneira de fazer
 
 def convert(h, m):
-  if h < 0 or h > 23 or m < 0 or m > 59:
-    print('Hora inválida')
-    return
-  if h >= 12:
-    print(f'{h - 12}:{m} PM')
-  else:
-    print(f'{h}:{m} AM')
-  
-  print(f'{h}:{m} AM')
+    if h < 0 or h > 23 or m < 0 or m > 59:
+        print('Hora inválida')
+        return
+
+    if h == 0:
+        print(f'12:{m:02d} AM')  # Meia-noite (00:xx → 12:xx AM)
+    elif h == 12:
+        print(f'12:{m:02d} PM')  # Meio-dia (12:xx → 12:xx PM)
+    elif h > 12:
+        print(f'{h - 12}:{m:02d} PM')  # Horário da tarde/noite
+    else:
+        print(f'{h}:{m:02d} AM')  # Horário da manhã
 
 hora = int(input('Digite a hora: '))
 minuto = int(input('Digite os minutos: '))

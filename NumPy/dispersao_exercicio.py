@@ -21,4 +21,4 @@ desvio_padrao_turma_B = np.std(notas_turma_B)
 print("Desvio padrão da turma A:", desvio_padrao_turma_A)
 print("Desvio padrão da turma B:", desvio_padrao_turma_B)
 
-# Conclusão: A turma B tem mais variabilidade e dispersão do que a turma A, pois suas notas estão mais espalhadas.
+# Conclusão: A turma B tem mais variabilidade e dispersão do que a turma A, pois suas notas estão mais espalhadas. A turma A é mais homogênea.

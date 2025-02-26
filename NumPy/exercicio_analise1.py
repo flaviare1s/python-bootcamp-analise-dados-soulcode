@@ -8,6 +8,13 @@ import numpy as np
 vendas_regiao_X = [150, 160, 155, 158, 165, 162, 155, 160, 157, 159, 160, 163, 158, 160, 161, 159, 157, 162, 164, 161, 160, 160, 158, 157, 163, 161, 159, 160, 165, 157]
 vendas_regiao_Y = [100, 150, 80, 200, 120, 90, 170, 180, 140, 130, 110, 160, 210, 140, 130, 150, 190, 110, 120, 150, 160, 200, 180, 170, 120, 150, 100, 180, 150, 170]
 
+soma_vendas_regiao_X = np.sum(vendas_regiao_X)
+soma_vendas_regiao_Y = np.sum(vendas_regiao_Y)
+
+print('\n----- Soma -----\n')
+print(f'Região X: {soma_vendas_regiao_X}')
+print(f'Região Y: {soma_vendas_regiao_Y}')
+
 media_vendas_regiao_X = np.mean(vendas_regiao_X)
 media_vendas_regiao_Y = np.mean(vendas_regiao_Y)
 

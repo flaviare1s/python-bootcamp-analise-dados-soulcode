@@ -22,6 +22,13 @@ print('\n----- Média -----\n')
 print(f'Região X: {media_vendas_regiao_X}')
 print(f'Região Y: {media_vendas_regiao_Y}')
 
+mediana_vendas_regiao_X = np.median(vendas_regiao_X)
+mediana_vendas_regiao_Y = np.median(vendas_regiao_Y)
+
+print('\n----- Mediana -----\n')
+print(f"Mediana da Região X: {mediana_vendas_regiao_X}")
+print(f"Mediana da Região Y: {mediana_vendas_regiao_Y}")
+
 variancia_vendas_regiao_X = np.var(vendas_regiao_X)
 variancia_vendas_regiao_Y = np.var(vendas_regiao_Y)
 
@@ -50,6 +57,3 @@ min_vendas_regiao_Y = np.min(vendas_regiao_Y)
 print('\n----- Mínimo -----\n')
 print(f'Região X: {min_vendas_regiao_X}')
 print(f'Região Y: {min_vendas_regiao_Y}')
-
-# Conclusão: De acordo com a análise dos dados, apesar de terem médias bem parecidas, as vendas na região X são mais homogêneas e consistentes.
-# A região Y apresenta mais variabilidade e dispersão. Uma medida cabível seria adotar estratégias personalizadas para a Região Y, uma vez que suas vendas apresentam maior variação e imprevisibilidade.

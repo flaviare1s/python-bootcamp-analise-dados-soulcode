@@ -12,8 +12,8 @@ print("Média da turma B:", media_turma_B)
 variancia_turma_A = np.var(notas_turma_A)
 variancia_turma_B = np.var(notas_turma_B)
 
-print("Variancia da turma A:", variancia_turma_A)
-print("Variancia da turma B:", variancia_turma_B)
+print("Variância da turma A:", variancia_turma_A)
+print("Variância da turma B:", variancia_turma_B)
 
 desvio_padrao_turma_A = np.std(notas_turma_A)
 desvio_padrao_turma_B = np.std(notas_turma_B)

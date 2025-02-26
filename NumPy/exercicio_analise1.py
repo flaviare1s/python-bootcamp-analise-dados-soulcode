@@ -36,5 +36,20 @@ print('\n----- Desvio Padrão -----\n')
 print(f'Região X: {desvio_padrao_vendas_regiao_X}')
 print(f'Região Y: {desvio_padrao_vendas_regiao_Y}')
 
+# Máximo e mínimo
+max_vendas_regiao_X = np.max(vendas_regiao_X)
+max_vendas_regiao_Y = np.max(vendas_regiao_Y)
+
+print('\n----- Máximo -----\n')
+print(f'Região X: {max_vendas_regiao_X}')
+print(f'Região Y: {max_vendas_regiao_Y}')
+
+min_vendas_regiao_X = np.min(vendas_regiao_X)
+min_vendas_regiao_Y = np.min(vendas_regiao_Y)
+
+print('\n----- Mínimo -----\n')
+print(f'Região X: {min_vendas_regiao_X}')
+print(f'Região Y: {min_vendas_regiao_Y}')
+
 # Conclusão: De acordo com a análise dos dados, apesar de terem médias bem parecidas, as vendas na região X são mais homogêneas e consistentes.
 # A região Y apresenta mais variabilidade e dispersão. Uma medida cabível seria adotar estratégias personalizadas para a Região Y, uma vez que suas vendas apresentam maior variação e imprevisibilidade.
